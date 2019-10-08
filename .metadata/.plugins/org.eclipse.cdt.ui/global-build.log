@@ -1,0 +1,391 @@
+14:24:52 **** Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:29:47 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:29:55 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:30:07 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:30:15 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:44:43 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:27:5: warning: implicit declaration of function ‘esSoloNumeroFlotante’; did you mean ‘esSoloNumerosFlotantes’? [-Wimplicit-function-declaration]
+  if(esSoloNumeroFlotante(texto,"\nNo es un numero valido")==0)
+     ^~~~~~~~~~~~~~~~~~~~
+     esSoloNumerosFlotantes
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+/usr/bin/ld: ./src/TpOrquestasMusicos.o: in function `main':
+/home/mati/Documents/Repaso/TpOrquestasMusicos/Debug/../src/TpOrquestasMusicos.c:27: undefined reference to `esSoloNumeroFlotante'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:32: TpOrquestasMusicos] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:45:01 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:45:03 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:45:37 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:45:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:45:58 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+15:41:25 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+01:59:54 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+01:59:58 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:00:28 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:00:33 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:00:46 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:02:27 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:02:30 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:03:07 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:03:19 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:03:27 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:27:42 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:36:2: error: ‘getValid’ undeclared (first use in this function); did you mean ‘getdelim’?
+  getValid
+  ^~~~~~~~
+  getdelim
+../src/TpOrquestasMusicos.c:36:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/TpOrquestasMusicos.c:36:10: error: expected ‘;’ before ‘return’
+  getValid
+          ^
+          ;
+../src/TpOrquestasMusicos.c:38:2:
+  return EXIT_SUCCESS;
+  ~~~~~~   
+make: *** [src/subdir.mk:23: src/TpOrquestasMusicos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:32:14 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:32:17 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:34:20 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:34:23 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:34:37 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:34:39 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:35:40 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:35:42 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:37:33 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:37:35 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:37:57 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:38:28 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:38:52 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:45:49 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:47:101: warning: overflow in conversion from ‘float’ to ‘int’ changes value from ‘3.40282347e+38f’ to ‘2147483647’ [-Woverflow]
+  getValidFloatFromString(&altura,"Ingrese numero Flotante","\nError. Ingrese solo numeros", FLT_MIN,FLT_MAX,2);
+                                                                                                     ^~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:46:21 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:49:37 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:47:101: warning: overflow in conversion from ‘float’ to ‘int’ changes value from ‘3.40282347e+38f’ to ‘2147483647’ [-Woverflow]
+  getValidFloatFromString(&altura,"Ingrese numero Flotante","\nError. Ingrese solo numeros", FLT_MIN,FLT_MAX,2);
+                                                                                                     ^~~~~~~
+../src/TpOrquestasMusicos.c:21:7: warning: unused variable ‘texto’ [-Wunused-variable]
+  char texto[50];
+       ^~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:51:05 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:21:7: warning: unused variable ‘texto’ [-Wunused-variable]
+  char texto[50];
+       ^~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:51:09 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:25 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:34 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:53:07 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+02:53:10 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:53:57 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:54:19 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+02:54:42 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+03:45:54 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:20:7: warning: unused variable ‘texto’ [-Wunused-variable]
+  char texto[50];
+       ^~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
