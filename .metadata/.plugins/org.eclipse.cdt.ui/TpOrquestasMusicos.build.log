@@ -1,24 +1,6 @@
-03:45:54 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+16:43:43 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
-Building file: ../src/TpOrquestasMusicos.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
-../src/TpOrquestasMusicos.c: In function ‘main’:
-../src/TpOrquestasMusicos.c:20:7: warning: unused variable ‘texto’ [-Wunused-variable]
-  char texto[50];
-       ^~~~~
-Finished building: ../src/TpOrquestasMusicos.c
- 
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: TpOrquestasMusicos
-Invoking: GCC C Linker
-gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
-Finished building target: TpOrquestasMusicos
- 
+make: Nothing to be done for 'all'.
 
-03:45:55 Build Finished. 0 errors, 1 warnings. (took 924ms)
+16:43:44 Build Finished. 0 errors, 0 warnings. (took 772ms)
 

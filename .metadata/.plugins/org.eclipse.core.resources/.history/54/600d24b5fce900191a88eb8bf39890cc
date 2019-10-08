@@ -1,0 +1,32 @@
+/*
+ * musicos.h
+ *
+ *  Created on: Oct 8, 2019
+ *      Author: mati
+ */
+
+#ifndef MUSICOS_H_
+#define MUSICOS_H_
+
+#define STATUS_EMPTY 0
+#define STATUS_NOT_EMPTY 1
+#define CANT_CARACTERES 51
+#define CANT_REINTENTOS 2
+#define CANT_ORQUESTAS 50
+
+typedef struct
+{
+	int idMusico;
+	int status;
+	//***************
+	char nombre[51];
+	char apellido[51];
+	int edad;
+	int idOrquesta;
+	int idInstrumento;
+
+}Musico;
+
+static int generarIdMusico(void);
+
+#endif /* MUSICOS_H_ */

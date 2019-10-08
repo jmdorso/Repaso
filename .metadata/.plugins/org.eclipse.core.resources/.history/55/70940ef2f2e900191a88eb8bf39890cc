@@ -1,0 +1,29 @@
+/*
+ * instrumentos.h
+ *
+ *  Created on: Oct 8, 2019
+ *      Author: mati
+ */
+
+#ifndef INSTRUMENTOS_H_
+#define INSTRUMENTOS_H_
+
+#define STATUS_EMPTY 0
+#define STATUS_NOT_EMPTY 1
+#define CANT_CARACTERES 51
+#define CANT_REINTENTOS 2
+#define CANT_INSTRUMENTOS 20
+
+typedef struct
+{
+	int id;
+	int status;
+	//***************
+	char nombre[51];
+	int tipo;
+
+}Instrumentos;
+
+static int generarIdInstrumento(void);
+
+#endif /* INSTRUMENTOS_H_ */

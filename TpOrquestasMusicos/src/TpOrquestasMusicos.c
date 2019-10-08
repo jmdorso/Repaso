@@ -12,38 +12,148 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
 #include "utn.h"
+#include "orquestas.h"
+#include "instrumentos.h"
+#include "musicos.h"
 
+#define ALTA_OK 1
+#define ALTA_DNS 0
 
-int main(void) {
-	char texto[50];
-	int rdo;
-	float altura;
+int main(void)
+{
+	char seguir = 's';
+	char salir;
+	char confirmarBaja;
+	char confirmarModif;
+	Orquesta unaOrquestaAlta;
+	Orquesta unaOrquestaBaja;
+	Orquesta aOrquesta[CANT_ORQUESTAS];
+	Instrumento unInstrumentoAlta;
+	Instrumento aInstrumento[CANT_INSTRUMENTOS];
+	Musico unMusicoAlta;
+	Musico unMusicoBaja;
+	Musico unMusicoModif;
+	Musico aMusico[CANT_MUSICOS];
+	int opcion;
+	int flagAlta=ALTA_DNS;
+	int auxId;
+	int id;
 
-	/*getString(texto,"Ingrese numero","\nError!",1,50,2);
-	if(esSoloNumeros(texto,"\nNo es un numero valido")==0)
+	initLugarLibreOrquesta(aOrquesta,CANT_ORQUESTAS);
+	initLugarLibreInstrumento(aInstrumento,CANT_INSTRUMENTOS);
+	initLugarLibreMusico(aMusico,CANT_MUSICOS);
+
+	do
 	{
-		printf("%s",texto);
-	}
-	getString(texto,"Ingrese numero flotante","\nError!",1,50,2);
-	if(esSoloNumerosFlotantes(texto,"\nNo es un numero valido")==0)
-	{
-		printf("%s",texto);
-	}
-	getString(texto,"Ingrese texto Alfa Numerico","\nError!",1,50,2);
-	if(esAlfaNumerico(texto,"\nEl texto contiene un caracter no deseado, solo letras, numeros y espacios")==0)
-	{
-		printf("\n%s",texto);
-	}*/
-	rdo = 5;
-	printf("\n\nEn la variable rdo esta cargado el num # %d\n\n",rdo);
-	getValidIntFromString(&rdo,"Ingrese numero entero","\nError. Ingrese solo numeros",	INT_MIN,INT_MAX,2);
-	printf("\n\nEn la variable rdo esta cargado el num # %d\nSi lo multiplico por 2 el resultado es %d\n",rdo,rdo*2);
+		printf("----------------------------------------------------------------------------------\n");
+	    printf("\tModelo primer parcial 1_2019. Gestion de orquestas || Juan Martin Dorso\n\n");
+	    printf("01. Agregar Orquesta\n");
+	    printf("02. Eliminar Orquesta\n");
+	    printf("03. Imprimir Orquestas\n");
+	    printf("04. Agregar Musico\n");
+	    printf("05. Modificar Musico\n");
+	    printf("06. Eliminar Musico\n");
+	    printf("07. Imprimir Musicos\n");
+	    printf("08. Agregar Instrumento\n");
+	    printf("09. Imprimir Instrumentos\n");
+	    printf("10. Informar\n");
+	    printf("11. Salir\n\n");
 
-	altura = 1.76;
-	printf("\n\nEn la variable altura esta cargado el num # %.2f\n\n",altura);
-	getValidFloatFromString(&altura,"Ingrese numero Flotante","\nError. Ingrese solo numeros",	INT_MIN,INT_MAX,2);
-	printf("\n\nEn la variable altura esta cargado el num # %.2f\nSi crecio 5cm el resultado es %.2f\n",altura,altura+0.05);
+	    if(getValidIntFromString(&opcion,"\tIngrese opcion: ","\nError",1,11,CANT_REINTENTOS)==0)
+	    {
+	    	switch(opcion)
+	    	{
+	    		case 1:
+	    				if(altaUnaSolaOrquestaPorUI(&unaOrquestaAlta)==EXIT_SUCCESS)
+	    				{
+	    					auxId=altaOrquestaPorId(aOrquesta,CANT_ORQUESTAS,unaOrquestaAlta);
+	    					if(auxId>EXIT_SUCCESS)
+	    					{
+			    				flagAlta=ALTA_OK;
+			    				printf("\n\nSe ingreso la orquesta con ID: # %d\n\n",auxId);
+	    					}
+	    				}
+	    				break;
+	    		case 2:
+						imprimirArrayOrquestasStatusOk(aOrquesta,CANT_ORQUESTAS);
+						getValidIntFromString(&auxId,"\nIngrese el ID: ","\nError\n",1,CANT_ORQUESTAS,CANT_REINTENTOS);
+						unaOrquestaBaja.id = auxId;
+						auxId = buscarOrquestaPorId(aOrquesta,CANT_ORQUESTAS,unaOrquestaBaja.id);
+						if(aOrquesta[auxId].status== STATUS_NOT_EMPTY)
+						{
+							printf("Quiere Eliminar la siguiente Orquesta: \n");
+							printf("Nombre: %s - Lugar: %s - ID: %d",aOrquesta[auxId].nombre,aOrquesta[auxId].lugar,aOrquesta[auxId].id);
+							getChar(&confirmarBaja,
+									"\nSeguro desea dar de baja? Ingrese s (o cualquier tecla para continuar): ",
+									"\nERROR. Verifique si ingreso una letra y/o desactive mayuscula\n",
+									'a',
+									'z',
+									CANT_REINTENTOS);
+							if(confirmarBaja == 's' || confirmarBaja == 'S')
+							{
+								if(bajaOrquestaPorId(aOrquesta,CANT_ORQUESTAS,unaOrquestaBaja.id)==EXIT_SUCCESS)
+								{
+									printf("\nBAJA EXITOSA\n\n");
+								}
+								else
+								{
+									printf("\nERROR EN BAJA\n\n");
+								}
+							}
+						}
+						else
+						{
+							printf("\n\nNo existe orquesta con ese ID\n\n");
+						}
+						break;
+	    		case 3:
+	    				imprimirArrayOrquestasStatusOk(aOrquesta,CANT_ORQUESTAS);
+	    				break;
+	    		case 4:
+						if(altaUnSoloMusicoPorUI(&unMusicoAlta,aOrquesta,CANT_ORQUESTAS,aInstrumento,CANT_INSTRUMENTOS)==EXIT_SUCCESS)
+						{
+							auxId=altaMusicoPorId(aMusico,CANT_MUSICOS,unMusicoAlta);
+							if(auxId>EXIT_SUCCESS)
+							{
+								flagAlta=ALTA_OK;
+								printf("\n\nSe ingreso un Musico con ID: # %d\n\n",auxId);
+							}
+						}
+						break;
+	    		case 7:
+	    				imprimirArrayMusicosStatusOk(aMusico,CANT_MUSICOS,aInstrumento,CANT_INSTRUMENTOS);
+	    				break;
+	    		case 8:
+	    				if(altaUnSoloInstrumentoPorUI(&unInstrumentoAlta)==EXIT_SUCCESS)
+	       				{
+	    					auxId=altaInstrumentoPorId(aInstrumento,CANT_INSTRUMENTOS,unInstrumentoAlta);
+	  				    	if(auxId>EXIT_SUCCESS)
+	    				    {
+	    						flagAlta=ALTA_OK;
+	    						printf("\n\nSe ingreso el instrumento con ID: # %d\n\n",auxId);
+	    				    }
+	       				}
+	    				break;
+	    		case 9:
+	    				imprimirArrayInstrumentosStatusOk(aInstrumento,CANT_INSTRUMENTOS);
+	    				break;
+	    		case 11:
+	    				getChar(&salir,
+	    						"\nSeguro desea salir? Ingrese s (o cualquier tecla para continuar): ",
+	    						"\nERROR. Verifique si ingreso una letra y/o desactive mayuscula\n",
+								'a',
+	    						'z',
+								CANT_REINTENTOS);
+	    				if(salir == 's' || salir == 'S')
+	    			     {
+	    					printf("\n\n\tEl programa se cerrara.");
+	    			        seguir = 'n';
+	    			     }
+	       				break;
+	    	}
+	    }
+	}while(seguir=='s' || seguir=='S');
+
 	return EXIT_SUCCESS;
 }

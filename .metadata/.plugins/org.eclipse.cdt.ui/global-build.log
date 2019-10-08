@@ -389,3 +389,1280 @@ Invoking: GCC C Linker
 gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
 Finished building target: TpOrquestasMusicos
  
+03:56:09 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:20:7: warning: unused variable ‘texto’ [-Wunused-variable]
+  char texto[50];
+       ^~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+03:56:12 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+03:56:26 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+13:38:27 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+../src/instrumentos.c:24:12: warning: ‘generarIdInstrumento’ defined but not used [-Wunused-function]
+ static int generarIdInstrumento(void)
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+In file included from ../src/musicos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+../src/orquestas.c:24:12: warning: ‘generarIdOrquesta’ defined but not used [-Wunused-function]
+ static int generarIdOrquesta(void)
+            ^~~~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+13:53:00 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+../src/orquestas.c: In function ‘altaOrquestaPorId’:
+../src/orquestas.c:69:14: warning: implicit declaration of function ‘buscarLugarLibreOrquesta’; did you mean ‘initLugarLibreOrquesta’? [-Wimplicit-function-declaration]
+   posArray = buscarLugarLibreOrquesta(aArray,cantidad);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+              initLugarLibreOrquesta
+../src/orquestas.c:70:23: warning: implicit declaration of function ‘buscarOrquestaPorId’; did you mean ‘altaOrquestaPorId’? [-Wimplicit-function-declaration]
+   if(posArray >= 0 && buscarOrquestaPorId(aArray,cantidad,orquesta.id) == -1)
+                       ^~~~~~~~~~~~~~~~~~~
+                       altaOrquestaPorId
+In file included from ../src/orquestas.c:14:
+../src/orquestas.c: At top level:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:11:52 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:34:6: warning: unused variable ‘auxId’ [-Wunused-variable]
+  int auxId;
+      ^~~~~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:30:11: warning: unused variable ‘unaOrquestaBaja’ [-Wunused-variable]
+  Orquesta unaOrquestaBaja;
+           ^~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:27:7: warning: unused variable ‘confirmarBaja’ [-Wunused-variable]
+  char confirmarBaja;
+       ^~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+../src/instrumentos.c:24:12: warning: ‘generarIdInstrumento’ defined but not used [-Wunused-function]
+ static int generarIdInstrumento(void)
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+In file included from ../src/musicos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:11:57 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:15:33 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:15:36 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:17:08 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:17:11 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:20:38 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:34:6: warning: unused variable ‘auxId’ [-Wunused-variable]
+  int auxId;
+      ^~~~~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:30:11: warning: unused variable ‘unaOrquestaBaja’ [-Wunused-variable]
+  Orquesta unaOrquestaBaja;
+           ^~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:27:7: warning: unused variable ‘confirmarBaja’ [-Wunused-variable]
+  char confirmarBaja;
+       ^~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:20:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:27:35 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:34:6: warning: unused variable ‘auxId’ [-Wunused-variable]
+  int auxId;
+      ^~~~~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:30:11: warning: unused variable ‘unaOrquestaBaja’ [-Wunused-variable]
+  Orquesta unaOrquestaBaja;
+           ^~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:27:7: warning: unused variable ‘confirmarBaja’ [-Wunused-variable]
+  char confirmarBaja;
+       ^~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:64:13: warning: ‘id’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+           if(id>EXIT_SUCCESS)
+             ^
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:27:38 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:28:15 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:34:6: warning: unused variable ‘auxId’ [-Wunused-variable]
+  int auxId;
+      ^~~~~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:30:11: warning: unused variable ‘unaOrquestaBaja’ [-Wunused-variable]
+  Orquesta unaOrquestaBaja;
+           ^~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:27:7: warning: unused variable ‘confirmarBaja’ [-Wunused-variable]
+  char confirmarBaja;
+       ^~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:28:18 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:18 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:72:48: error: ‘CANT_EMPLEADOS’ undeclared (first use in this function); did you mean ‘CANT_REINTENTOS’?
+       imprimirArrayOrquestasStatusOk(aOrquesta,CANT_EMPLEADOS);
+                                                ^~~~~~~~~~~~~~
+                                                CANT_REINTENTOS
+../src/TpOrquestasMusicos.c:72:48: note: each undeclared identifier is reported only once for each function it appears in
+../src/TpOrquestasMusicos.c:35:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/TpOrquestasMusicos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:36:46 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:35:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+14:36:49 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:06 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:35:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:33:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+../src/instrumentos.c:24:12: warning: ‘generarIdInstrumento’ defined but not used [-Wunused-function]
+ static int generarIdInstrumento(void)
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+In file included from ../src/musicos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+15:11:27 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:37:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:35:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+In file included from ../src/musicos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+15:11:30 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:59 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:114:10: warning: implicit declaration of function ‘altaUnSoloMusicoPorUI’; did you mean ‘altaUnSoloMusicotoPorUI’? [-Wimplicit-function-declaration]
+       if(altaUnSoloMusicoPorUI(&unMusicoAlta,aOrquesta,CANT_ORQUESTAS,aInstrumento,CANT_INSTRUMENTOS)==EXIT_SUCCESS)
+          ^~~~~~~~~~~~~~~~~~~~~
+          altaUnSoloMusicotoPorUI
+../src/TpOrquestasMusicos.c:41:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:39:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:36:9: warning: unused variable ‘unMusicoModif’ [-Wunused-variable]
+  Musico unMusicoModif;
+         ^~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:35:9: warning: unused variable ‘unMusicoBaja’ [-Wunused-variable]
+  Musico unMusicoBaja;
+         ^~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicotoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:166:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:167:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+../src/musicos.c: In function ‘imprimirArrayMusicos’:
+../src/musicos.c:207:30: error: ‘Musico’ {aka ‘struct <anonymous>’} has no member named ‘idEmployee’
+    aArray[i].status,aArray[i].idEmployee,aArray[i].name,aArray[i].lastName,aArray[i].salary,sectorEmpleado[aArray[i].sector-1]);
+                              ^
+../src/musicos.c:207:52: error: ‘Musico’ {aka ‘struct <anonymous>’} has no member named ‘name’; did you mean ‘nombre’?
+    aArray[i].status,aArray[i].idEmployee,aArray[i].name,aArray[i].lastName,aArray[i].salary,sectorEmpleado[aArray[i].sector-1]);
+                                                    ^~~~
+                                                    nombre
+../src/musicos.c:207:66: error: ‘Musico’ {aka ‘struct <anonymous>’} has no member named ‘lastName’
+    aArray[i].status,aArray[i].idEmployee,aArray[i].name,aArray[i].lastName,aArray[i].salary,sectorEmpleado[aArray[i].sector-1]);
+                                                                  ^
+../src/musicos.c:207:85: error: ‘Musico’ {aka ‘struct <anonymous>’} has no member named ‘salary’
+    aArray[i].status,aArray[i].idEmployee,aArray[i].name,aArray[i].lastName,aArray[i].salary,sectorEmpleado[aArray[i].sector-1]);
+                                                                                     ^
+../src/musicos.c:207:117: error: ‘Musico’ {aka ‘struct <anonymous>’} has no member named ‘sector’
+    aArray[i].status,aArray[i].idEmployee,aArray[i].name,aArray[i].lastName,aArray[i].salary,sectorEmpleado[aArray[i].sector-1]);
+                                                                                                                     ^
+../src/musicos.c:197:7: warning: variable ‘sectorEmpleado’ set but not used [-Wunused-but-set-variable]
+  char sectorEmpleado[3][25] = {"Compras","Manufactura","Ventas"};
+       ^~~~~~~~~~~~~~
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ used but never defined
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/musicos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:52:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicotoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:166:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:167:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ used but never defined
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+/usr/bin/ld: ./src/TpOrquestasMusicos.o: in function `main':
+/home/mati/Documents/GIT/Repaso/TpOrquestasMusicos/Debug/../src/TpOrquestasMusicos.c:114: undefined reference to `altaUnSoloMusicoPorUI'
+/usr/bin/ld: ./src/musicos.o: in function `altaMusicoPorId':
+/home/mati/Documents/GIT/Repaso/TpOrquestasMusicos/Debug/../src/musicos.c:73: undefined reference to `generarIdInstrumento'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:32: TpOrquestasMusicos] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:53:53 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:41:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:39:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:36:9: warning: unused variable ‘unMusicoModif’ [-Wunused-variable]
+  Musico unMusicoModif;
+         ^~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:35:9: warning: unused variable ‘unMusicoBaja’ [-Wunused-variable]
+  Musico unMusicoBaja;
+         ^~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:166:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:167:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ used but never defined
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c:24:12: warning: ‘generarIdMusico’ defined but not used [-Wunused-function]
+ static int generarIdMusico(void)
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+/usr/bin/ld: ./src/musicos.o: in function `altaMusicoPorId':
+/home/mati/Documents/GIT/Repaso/TpOrquestasMusicos/Debug/../src/musicos.c:73: undefined reference to `generarIdInstrumento'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:32: TpOrquestasMusicos] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:54:21 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:166:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:167:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+15:54:25 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:29 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:172:27: warning: ‘auxIdOrq’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idOrquesta=auxIdOrq;
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/musicos.c:173:30: warning: ‘auxIdInst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idInstrumento=auxIdInst;
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+15:57:32 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:45 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:41:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:39:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:36:9: warning: unused variable ‘unMusicoModif’ [-Wunused-variable]
+  Musico unMusicoModif;
+         ^~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:35:9: warning: unused variable ‘unMusicoBaja’ [-Wunused-variable]
+  Musico unMusicoBaja;
+         ^~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
+ 
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:172:27: warning: ‘auxIdOrq’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idOrquesta=auxIdOrq;
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/musicos.c:173:30: warning: ‘auxIdInst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idInstrumento=auxIdInst;
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:15:48 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:38 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:172:27: warning: ‘auxIdOrq’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idOrquesta=auxIdOrq;
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/musicos.c:173:30: warning: ‘auxIdInst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idInstrumento=auxIdInst;
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:20:40 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:37 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:172:27: warning: ‘auxIdOrq’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idOrquesta=auxIdOrq;
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/musicos.c:173:30: warning: ‘auxIdInst’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         musico->idInstrumento=auxIdInst;
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:24:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:31:51 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+../src/musicos.c:144:6: warning: unused variable ‘auxIdInst’ [-Wunused-variable]
+  int auxIdInst;
+      ^~~~~~~~~
+../src/musicos.c:142:6: warning: unused variable ‘auxIdOrq’ [-Wunused-variable]
+  int auxIdOrq;
+      ^~~~~~~~
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:31:54 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:41 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:144:6: warning: unused variable ‘auxIdInst’ [-Wunused-variable]
+  int auxIdInst;
+      ^~~~~~~~~
+../src/musicos.c:142:6: warning: unused variable ‘auxIdOrq’ [-Wunused-variable]
+  int auxIdOrq;
+      ^~~~~~~~
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:39:44 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:40 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+../src/musicos.c:144:6: warning: unused variable ‘auxIdInst’ [-Wunused-variable]
+  int auxIdInst;
+      ^~~~~~~~~
+../src/musicos.c:142:6: warning: unused variable ‘auxIdOrq’ [-Wunused-variable]
+  int auxIdOrq;
+      ^~~~~~~~
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building target: TpOrquestasMusicos
+Invoking: GCC C Linker
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
+ 
+16:43:43 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+make: Nothing to be done for 'all'.
