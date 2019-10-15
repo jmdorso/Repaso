@@ -34,6 +34,8 @@ int altaMusicoPorId(Musico *aArray, int cantidad,Musico musico);
 int buscarLugarLibreMusico(Musico *aArray, int cantidad);
 int buscarMusicoPorId(Musico *aArray, int cantidad,int id);
 int altaUnSoloMusicoPorUI(Musico *musico,Orquesta *aOrquesta,int cantOrquesta,Instrumento *aInstrumento,int cantInstrumento);
+int imprimirArrayMusicos(Musico *aArray, int cantidad,Instrumento *aInst,int cantInst);
 int imprimirArrayMusicosStatusOk(Musico *aArray, int cantidad,Instrumento *aInst,int cantInst);
+int bajaMusicoPorId(Musico *aArray, int cantidad,int id);
 
 #endif /* MUSICOS_H_ */

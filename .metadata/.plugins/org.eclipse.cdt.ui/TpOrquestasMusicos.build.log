@@ -1,6 +1,6 @@
-16:43:43 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+18:20:00 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
 make: Nothing to be done for 'all'.
 
-16:43:44 Build Finished. 0 errors, 0 warnings. (took 772ms)
+18:20:00 Build Finished. 0 errors, 0 warnings. (took 780ms)
 

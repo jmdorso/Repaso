@@ -16,6 +16,7 @@
 #include "orquestas.h"
 #include "instrumentos.h"
 #include "musicos.h"
+#include "informes.h"
 
 #define ALTA_OK 1
 #define ALTA_DNS 0
@@ -121,6 +122,38 @@ int main(void)
 							}
 						}
 						break;
+	    		case 6:
+    				imprimirArrayMusicosStatusOk(aMusico,CANT_MUSICOS,aInstrumento,CANT_INSTRUMENTOS);
+					getValidIntFromString(&auxId,"\nIngrese el ID: ","\nError\n",1,CANT_MUSICOS,CANT_REINTENTOS);
+					unMusicoBaja.idMusico = auxId;
+					auxId = buscarMusicoPorId(aMusico,CANT_MUSICOS,unMusicoBaja.idMusico);
+					if(aMusico[auxId].status== STATUS_NOT_EMPTY)
+					{
+						printf("Quiere Eliminar el siguiente Musico: \n");
+						printf("Nombre: %s - Apellido: %s - ID: %d",aMusico[auxId].nombre,aMusico[auxId].apellido,aMusico[auxId].idMusico);
+						getChar(&confirmarBaja,
+								"\nSeguro desea dar de baja? Ingrese s (o cualquier tecla para continuar): ",
+								"\nERROR. Verifique si ingreso una letra y/o desactive mayuscula\n",
+								'a',
+								'z',
+								CANT_REINTENTOS);
+						if(confirmarBaja == 's' || confirmarBaja == 'S')
+						{
+							if(bajaMusicoPorId(aMusico,CANT_MUSICOS,unMusicoBaja.idMusico)==EXIT_SUCCESS)
+							{
+								printf("\nBAJA EXITOSA\n\n");
+							}
+							else
+							{
+								printf("\nERROR EN BAJA\n\n");
+							}
+						}
+					}
+					else
+					{
+						printf("\n\nNo existe musico con ese ID\n\n");
+					}
+					break;
 	    		case 7:
 	    				imprimirArrayMusicosStatusOk(aMusico,CANT_MUSICOS,aInstrumento,CANT_INSTRUMENTOS);
 	    				break;

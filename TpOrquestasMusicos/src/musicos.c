@@ -249,3 +249,28 @@ int imprimirArrayMusicosStatusOk(Musico *aArray, int cantidad,Instrumento *aInst
 	}
 	return retorno;
 }
+
+/** \brief busca una orquesta por ID y la da de baja mediante el campo status (dejandolo EMPTY)
+ * \param *aArray es el array de orquestas
+ * \param cantidad es la cantidad de elementos del array
+ * \param id es el ID a buscar
+ * \return -1 si hay algun error o 0 si esta bien.
+ *
+ */
+
+int bajaMusicoPorId(Musico *aArray, int cantidad,int id)
+{
+
+	int retorno = EXIT_ERROR;
+	int posArray;
+	if(aArray != NULL && cantidad>0 && id>=0)
+	{
+		posArray = buscarMusicoPorId(aArray,cantidad,id);
+		if(posArray != -1)
+		{
+			aArray[posArray].status = STATUS_EMPTY;
+			retorno = EXIT_SUCCESS;
+		}
+	}
+	return retorno;
+}

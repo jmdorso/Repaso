@@ -1,70 +1,146 @@
-17:05:41 **** Incremental Build of configuration Debug for project PPP12 ****
+17:53:17 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
 make: Nothing to be done for 'all'.
-17:05:52 **** Incremental Build of configuration Debug for project PPP12 ****
+17:53:23 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
-Building file: ../src/PPP12.c
+make: Nothing to be done for 'all'.
+18:19:23 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
+make all 
+Building file: ../src/TpOrquestasMusicos.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PPP12.d" -MT"src/PPP12.o" -o "src/PPP12.o" "../src/PPP12.c"
-Finished building: ../src/PPP12.c
- 
-Building file: ../src/abonado.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/abonado.d" -MT"src/abonado.o" -o "src/abonado.o" "../src/abonado.c"
-Finished building: ../src/abonado.c
- 
-Building file: ../src/controller.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
-Finished building: ../src/controller.c
- 
-Building file: ../src/llamada.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/llamada.d" -MT"src/llamada.o" -o "src/llamada.o" "../src/llamada.c"
-Finished building: ../src/llamada.c
- 
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: PPP12
-Invoking: GCC C Linker
-gcc  -o "PPP12"  ./src/PPP12.o ./src/abonado.o ./src/controller.o ./src/llamada.o ./src/utn.o   
-/usr/bin/ld: ./src/llamada.o: in function `llamadas_init':
-/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/llamada.c:20: multiple definition of `llamadas_init'; ./src/controller.o:/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/controller.c:20: first defined here
-/usr/bin/ld: ./src/llamada.o: in function `llamadas_open':
-/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/llamada.c:44: multiple definition of `llamadas_open'; ./src/controller.o:/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/controller.c:44: first defined here
-/usr/bin/ld: ./src/llamada.o: in function `llamadas_find':
-/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/llamada.c:76: multiple definition of `llamadas_find'; ./src/controller.o:/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/controller.c:76: first defined here
-/usr/bin/ld: ./src/llamada.o: in function `llamadas_close':
-/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/llamada.c:104: multiple definition of `llamadas_close'; ./src/controller.o:/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/controller.c:104: first defined here
-/usr/bin/ld: ./src/PPP12.o: in function `main':
-/home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:34: undefined reference to `controller_mock'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:45: undefined reference to `controller_altaAbonado'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:48: undefined reference to `controller_modificarAbonado'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:51: undefined reference to `controller_bajaAbonado'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:54: undefined reference to `controller_nuevaLlamada'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:57: undefined reference to `controller_cerrarLlamada'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:60: undefined reference to `controller_informeAbonadosConMasReclamos'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:61: undefined reference to `controller_informeReclamosTiempos'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:64: undefined reference to `controller_listarLlamadas'
-/usr/bin/ld: /home/mati/Documents/GIT/Repaso/PPP12/Debug/../src/PPP12.c:68: undefined reference to `controller_listarAbonados'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:32: PPP12] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:125:6: error: too few arguments to function ‘imprimirArrayMusicosStatusOk’
+      imprimirArrayMusicosStatusOk(aMusico,CANT_MUSICOS);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:38:5: note: declared here
+ int imprimirArrayMusicosStatusOk(Musico *aArray, int cantidad,Instrumento *aInst,int cantInst);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:41:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:39:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:36:9: warning: unused variable ‘unMusicoModif’ [-Wunused-variable]
+  Musico unMusicoModif;
+         ^~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/TpOrquestasMusicos.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-17:06:46 **** Incremental Build of configuration Debug for project PPP12 ****
+18:19:55 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
-Building file: ../src/controller.c
+Building file: ../src/TpOrquestasMusicos.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
-Finished building: ../src/controller.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TpOrquestasMusicos.d" -MT"src/TpOrquestasMusicos.o" -o "src/TpOrquestasMusicos.o" "../src/TpOrquestasMusicos.c"
+../src/TpOrquestasMusicos.c: In function ‘main’:
+../src/TpOrquestasMusicos.c:41:6: warning: unused variable ‘id’ [-Wunused-variable]
+  int id;
+      ^~
+../src/TpOrquestasMusicos.c:39:6: warning: variable ‘flagAlta’ set but not used [-Wunused-but-set-variable]
+  int flagAlta=ALTA_DNS;
+      ^~~~~~~~
+../src/TpOrquestasMusicos.c:36:9: warning: unused variable ‘unMusicoModif’ [-Wunused-variable]
+  Musico unMusicoModif;
+         ^~~~~~~~~~~~~
+../src/TpOrquestasMusicos.c:28:7: warning: unused variable ‘confirmarModif’ [-Wunused-variable]
+  char confirmarModif;
+       ^~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:16:
+../src/TpOrquestasMusicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:17:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/TpOrquestasMusicos.c:18:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/TpOrquestasMusicos.c
  
-Building target: PPP12
+Building file: ../src/instrumentos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/instrumentos.d" -MT"src/instrumentos.o" -o "src/instrumentos.o" "../src/instrumentos.c"
+In file included from ../src/instrumentos.c:13:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/instrumentos.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/instrumentos.c
+ 
+Building file: ../src/musicos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/musicos.d" -MT"src/musicos.o" -o "src/musicos.o" "../src/musicos.c"
+../src/musicos.c: In function ‘altaUnSoloMusicoPorUI’:
+../src/musicos.c:159:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(retorno == EXIT_SUCCESS);
+     ^~
+../src/musicos.c:160:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     {
+     ^
+../src/musicos.c:165:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(retorno == EXIT_SUCCESS);
+       ^~
+../src/musicos.c:166:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       {
+       ^
+../src/musicos.c:144:6: warning: unused variable ‘auxIdInst’ [-Wunused-variable]
+  int auxIdInst;
+      ^~~~~~~~~
+../src/musicos.c:142:6: warning: unused variable ‘auxIdOrq’ [-Wunused-variable]
+  int auxIdOrq;
+      ^~~~~~~~
+In file included from ../src/musicos.c:13:
+../src/musicos.c: At top level:
+../src/orquestas.h:28:12: warning: ‘generarIdOrquesta’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdOrquesta(void);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/musicos.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/musicos.c
+ 
+Building file: ../src/orquestas.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/orquestas.d" -MT"src/orquestas.o" -o "src/orquestas.o" "../src/orquestas.c"
+In file included from ../src/orquestas.c:14:
+../src/instrumentos.h:27:12: warning: ‘generarIdInstrumento’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdInstrumento(void);
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/orquestas.c:15:
+../src/musicos.h:30:12: warning: ‘generarIdMusico’ declared ‘static’ but never defined [-Wunused-function]
+ static int generarIdMusico(void);
+            ^~~~~~~~~~~~~~~
+Finished building: ../src/orquestas.c
+ 
+Building target: TpOrquestasMusicos
 Invoking: GCC C Linker
-gcc  -o "PPP12"  ./src/PPP12.o ./src/abonado.o ./src/controller.o ./src/llamada.o ./src/utn.o   
-Finished building target: PPP12
+gcc  -o "TpOrquestasMusicos"  ./src/TpOrquestasMusicos.o ./src/instrumentos.o ./src/musicos.o ./src/orquestas.o ./src/utn.o   
+Finished building target: TpOrquestasMusicos
  
-17:06:49 **** Incremental Build of configuration Debug for project PPP12 ****
+18:20:00 **** Incremental Build of configuration Debug for project TpOrquestasMusicos ****
 make all 
 make: Nothing to be done for 'all'.
